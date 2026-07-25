@@ -1,0 +1,27 @@
+{
+  "name": "democarritodecompras-jest",
+  "version": "1.0.0",
+  "description": "d",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+"scripts": {
+  "test": "jest"
+},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LuliMovio/DemoCarritoDeCompras-Jest.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/LuliMovio/DemoCarritoDeCompras-Jest/issues"
+  },
+  "homepage": "https://github.com/LuliMovio/DemoCarritoDeCompras-Jest#readme",
+  "devDependencies": {
+    "jest": "^30.4.2"
+  }
+}
