@@ -16,6 +16,16 @@ class Carrito {
 
         return total;
     }
-}
 
+    eliminarProducto(nombre) {
+        this.productos = this.productos.filter(
+            producto => producto.nombre !== nombre
+            );  
+    }
+
+    vaciarCarrito() {
+        this.productos = [];
+    }
+
+}
 module.exports = Carrito;
