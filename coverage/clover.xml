@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1785072694920" clover="3.2.0">
+  <project timestamp="1785072694920" name="All files">
+    <metrics statements="19" coveredstatements="19" conditionals="2" coveredconditionals="1" methods="12" coveredmethods="12" elements="33" coveredelements="32" complexity="0" loc="19" ncloc="19" packages="1" files="2" classes="2"/>
+    <file name="carrito.js" path="C:\Users\Administrador\Documents\Facu 2026\Desarrollo de Software\PoC-demo\DemoCarritoDeCompras-Jest\src\carrito.js">
+      <metrics statements="14" coveredstatements="14" conditionals="2" coveredconditionals="1" methods="8" coveredmethods="8"/>
+      <line num="1" count="1" type="stmt"/>
+      <line num="5" count="9" type="stmt"/>
+      <line num="9" count="8" type="stmt"/>
+      <line num="13" count="2" type="stmt"/>
+      <line num="15" count="2" type="cond" truecount="1" falsecount="1"/>
+      <line num="16" count="2" type="stmt"/>
+      <line num="25" count="3" type="stmt"/>
+      <line num="27" count="3" type="stmt"/>
+      <line num="28" count="3" type="stmt"/>
+      <line num="31" count="3" type="stmt"/>
+      <line num="35" count="2" type="stmt"/>
+      <line num="36" count="1" type="stmt"/>
+      <line num="41" count="1" type="stmt"/>
+      <line num="45" count="1" type="stmt"/>
+    </file>
+    <file name="productos.js" path="C:\Users\Administrador\Documents\Facu 2026\Desarrollo de Software\PoC-demo\DemoCarritoDeCompras-Jest\src\productos.js">
+      <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
+      <line num="1" count="1" type="stmt"/>
+      <line num="15" count="1" type="stmt"/>
+      <line num="19" count="1" type="stmt"/>
+      <line num="20" count="1" type="stmt"/>
+      <line num="24" count="1" type="stmt"/>
+    </file>
+  </project>
+</coverage>
