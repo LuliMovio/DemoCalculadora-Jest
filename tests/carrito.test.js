@@ -35,5 +35,15 @@ describe('Pruebas unitarias para Carrito de Compras', () => {
 
         expect(carrito.productos).toEqual([]);
     });
-    
+
+    test('El total de un carrito vacío debe ser 0', () => {
+        expect(carrito.calcularTotal()).toBe(0);
+    });
+
+    test('Debe poder eliminar un producto que no existe sin generar errores', () => {
+        carrito.eliminarProducto('Producto inexistente');
+
+        expect(carrito.productos).toHaveLength(0);
+    });   
+     
 });
