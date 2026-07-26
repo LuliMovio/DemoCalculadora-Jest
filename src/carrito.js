@@ -1,3 +1,5 @@
+const productos = require('./productos');
+
 class Carrito {
     constructor() {
         this.productos = [];
@@ -5,6 +7,18 @@ class Carrito {
 
     agregarProducto(producto) {
         this.productos.push(producto);
+    }
+
+    agregarProductoPorId(id, cantidad) {
+        const producto = productos.obtenerProductoPorId(id);
+
+        if (producto) {
+            this.agregarProducto({
+                nombre: producto.nombre,
+                precio: producto.precio,
+                cantidad: cantidad
+            });
+        }
     }
 
     calcularTotal() {

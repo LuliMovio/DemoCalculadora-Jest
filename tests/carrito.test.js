@@ -45,5 +45,39 @@ describe('Pruebas unitarias para Carrito de Compras', () => {
 
         expect(carrito.productos).toHaveLength(0);
     });   
-     
+
+    test('Debe agregar un producto buscándolo por su ID', () => {
+        carrito.agregarProductoPorId(1, 2);
+
+        expect(carrito.productos).toEqual([
+            {
+                nombre: 'Remera',
+                precio: 1000,
+                cantidad: 2
+            }
+        ]);
+    });
+
+    test('Debe agregar un producto utilizando un mock', () => {
+    const productos = require('../src/productos');
+
+    jest.spyOn(productos, 'obtenerProductoPorId').mockReturnValue({
+        id: 99,
+        nombre: 'Producto Mock',
+        precio: 5000
+    });
+
+    carrito.agregarProductoPorId(99, 2);
+
+    expect(carrito.productos).toEqual([
+        {
+            nombre: 'Producto Mock',
+            precio: 5000,
+            cantidad: 2
+        }
+    ]);
+
+    productos.obtenerProductoPorId.mockRestore();
+    });
+
 });
