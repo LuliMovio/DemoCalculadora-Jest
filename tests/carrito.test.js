@@ -20,4 +20,20 @@ describe('Pruebas unitarias para Carrito de Compras', () => {
 
         expect(carrito.calcularTotal()).toBe(7000);
     });
+
+    test('Debe eliminar un producto del carrito', () => {
+        carrito.agregarProducto({  nombre: 'Remera',  precio: 1000, cantidad: 1 });
+        carrito.eliminarProducto('Remera');
+
+        expect(carrito.productos).toHaveLength(0);
+    });
+  
+    test('Debe vaciar el carrito', () => {
+        carrito.agregarProducto({  nombre: 'Remera', precio: 1000, cantidad: 1 });
+        carrito.agregarProducto({  nombre: 'Pantalón', precio: 3000, cantidad: 1   });
+        carrito.vaciarCarrito();
+
+        expect(carrito.productos).toEqual([]);
+    });
+    
 });
