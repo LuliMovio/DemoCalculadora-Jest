@@ -80,4 +80,16 @@ describe('Pruebas unitarias para Carrito de Compras', () => {
     productos.obtenerProductoPorId.mockRestore();
     });
 
+    test('Debe obtener un producto de forma asíncrona', async () => {
+        const productos = require('../src/productos');
+
+        const producto = await productos.obtenerProductoPorIdAsync(1);
+
+        expect(producto).toEqual({
+            id: 1,
+            nombre: 'Remera',
+            precio: 1000
+        });
+    });
+
 });

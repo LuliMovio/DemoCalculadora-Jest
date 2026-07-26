@@ -15,6 +15,13 @@ function obtenerProductoPorId(id) {
     return productos.find(producto => producto.id === id);
 }
 
+function obtenerProductoPorIdAsync(id) {
+    return Promise.resolve(
+        productos.find(producto => producto.id === id)
+    );
+}
+
 module.exports = {
-    obtenerProductoPorId
+    obtenerProductoPorId,
+    obtenerProductoPorIdAsync
 };
