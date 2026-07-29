@@ -59,9 +59,13 @@ describe('Pruebas unitarias para Carrito de Compras', () => {
     });
 
     test('No debe agregar un producto si el ID no existe', () => {
+
         carrito.agregarProductoPorId(99, 1);
 
+
+
         expect(carrito.productos).toHaveLength(0);
+
     });
 
     test('Debe agregar un producto utilizando un mock', () => {
